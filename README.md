@@ -7,14 +7,6 @@
 
 增加了亮色主题的移植，现可以切换亮/暗色主题。
 
-展示：
-
-![网页捕获_24-1-2021_13417_www.origincat.com](img.jinxinsong.cn/网页捕获_24-1-2021_13417_www.origincat.com.jpeg)
-
-![20210124013623](img.jinxinsong.cn/20210124013623.png)
-
-![20210124013815](img.jinxinsong.cn/20210124013815.png)
-
 ## 原主题项目：
 
 github项目地址：https://github.com/Seevil/cactus
