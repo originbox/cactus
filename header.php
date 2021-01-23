@@ -39,7 +39,7 @@
         <?php if($this->options->favicon): ?><link rel="shortcut icon" href="<?php $this->options->favicon();?>"><?php endif; ?>
         <?php if($this->options->appleicon): ?><link rel="apple-touch-icon" sizes="180x180" href="<?php $this->options->appleicon();?>"><?php endif; ?>
         <link rel="manifest" href="<?php $this->options->themeUrl('/manifest.json'); ?>">
-        <link rel="stylesheet" href="<?php $this->options->themeUrl('css/style.css'); ?>">
+        <?php if($this->options->stylelog == 'dark'): ?><link rel="stylesheet" href="<?php $this->options->themeUrl('css/style.css'); ?>"><?php else: ?><link rel="stylesheet" href="<?php $this->options->themeUrl('css/style_light.css'); ?>"><?php endif; ?>
         <script src="<?php $this->options->themeUrl('js/jquery.min.js'); ?>"></script>
         <script>
             document.addEventListener("error", function(e) {

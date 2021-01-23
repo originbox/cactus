@@ -1,6 +1,6 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <link rel="stylesheet" href="<?php $this->options->themeUrl('css/comments.css'); ?>">
-<link rel="stylesheet" href="<?php $this->options->themeUrl('lib/OwO/OwO.min.css'); ?>">
+<?php if($this->options->stylelog == 'dark'): ?><link rel="stylesheet" href="<?php $this->options->themeUrl('lib/OwO/OwO-dark.min.css'); ?>"><?php else: ?><link rel="stylesheet" href="<?php $this->options->themeUrl('lib/OwO/OwO.min.css'); ?>"><?php endif; ?>
 <?php 
 function threadedComments($comments, $options) {
     $commentClass = '';

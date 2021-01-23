@@ -37,6 +37,14 @@ function themeConfig($form) {
         ),
         'disable', _t('文章目录设置'), _t('默认显示随机文章，启用则显示文章目录'));
     $form->addInput($catalog);
+
+    $stylelog = new Typecho_Widget_Helper_Form_Element_Radio('stylelog',
+        array('dark' => _t('暗色主题'),
+            'light' => _t('亮色主题'),
+        ),
+        'dark', _t('主题配色'), _t('默认显示暗色主题'));
+    $form->addInput($stylelog);
+
 	$Emoji = new Typecho_Widget_Helper_Form_Element_Radio('Emoji',
         array('able' => _t('启用'),
             'disable' => _t('禁止'),
